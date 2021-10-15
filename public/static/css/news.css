@@ -1,0 +1,112 @@
+/*!
+ * https://www.touchacha.cn
+ * Version - 4.0
+ * Edited by tcc / 2021.02.22 - 新闻列表
+ * Copyright © 2015-2021 版权所有 投查查
+ */
+@charset "utf-8";
+.news-box{background:#f4f6fb;padding-top:128px;}
+.news-bg{background:#fff;padding:24px 0 15px;border-bottom:1px solid #ebeef5;}
+.news-loc{font-size:14px;color:#9295a0;width:1400px;margin:0 auto;height:16px;line-height:16px;background:url(../images/news-loc.png) left center no-repeat;padding-left:25px;box-sizing:border-box;background-size:18px auto;}
+.news-loc a{color:#9295a0;}
+.news-loc a:hover{color:#1875f0;}
+.news-tit{text-align:center;padding-top:4px;}
+.news-tit h2{font-size:24px;font-weight:normal;color:#191c27;}
+.news-tit p{color:#9ea5bb;font-size:14px;margin-top:2px;}
+
+.news-box .fb{width:1400px;height:35px;margin:0 auto;font-size:14px;}
+.news-box .fb a{display:block;background:linear-gradient(to right, #1875f0, #1875f0);;width:108px;height:35px;line-height:35px;border-radius:35px;display:block;float:right;cursor:pointer;}
+.news-box .fb span{color:#fff;display:block;background:url(../images/news01.png) left 15px center no-repeat;padding-left:37px;background-size:14px auto;}
+.news-box .fb a:hover{background-size:14px auto; background:linear-gradient(to right, #1875f0, #00a0ff);box-shadow:0 0 6px #1875f0;}
+
+.news-menu{background:#fff;}
+.news-menu p{width:1400px;height:64px;line-height:64px;font-size:16px;margin:0 auto;}
+.news-menu a{float:left;color:#5a6073;margin-right:54px;position:relative;}
+.news-menu a em{width:0;height:4px;background:#1875f0;display:block;position:absolute;left:50%;bottom:0;border-radius:2px;overflow:hidden;transition:all 0.4s;}
+.news-menu a:last-child{margin-right:0;}
+.news-menu a:hover,.news-menu a.on{color:#191c27;}
+.news-menu a:hover em,.news-menu a.on em{width:100%;left:0;}
+
+.news-list{padding-bottom:34px;width:1400px;margin:34px auto 0;}
+
+.list-2 li{width:286px;height:337px;float:left;margin-right:24px;margin-bottom:24px;padding:12px 23px 0;border-radius:5px;transition:all 0.4s;background:#fff;}
+.list-2 li .libox{transition:all 0.4s;}
+.list-2 li:nth-child(4n){float:right;margin-right:0;}
+.list-2 li h3{font-size:18px;padding:12px 0 0;}
+.list-2 li h3 a{color:#191c27;display:block;height:54px;}
+.list-2 li h3 a:hover{color:#1875f0;}
+.list-2 li .date{width:100%;font-family:Arial;font-size:14px;color:#999;padding:9px 0 12px;}
+.list-2 li .p a{display:block;overflow:hidden;border-radius:8px;}
+.list-2 li .p img{width:286px;height:160px;border-radius:8px;}
+.list-2 li .p a:hover img{transform:scale(1.04);}
+.list-2 li .ott{width:100%;height:22px;line-height:22px;margin-top:23px;}
+.list-2 li .ott .img{float:left;position:relative;height:22px;line-height:22px;position:relative;}
+.list-2 li .ott .img .img-show{color:#999;display:block;}
+.list-2 li .ott .img img{float:left;border-radius:22px;}
+.list-2 li .ott .img p{float:left;margin-left:8px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;width:120px;height:22px;font-size:14px;}
+.list-2 li .ott .img .img-show:hover{color:#1875f0;}
+.list-2 li .ott .img .img-hide{width:402px;height:246px;position:absolute;left:-58px;bottom:22px;background:url(../images/popbox.png);padding:48px 51px 0;box-sizing:border-box;display:none;}
+.list-2 li .ott .img .img-hide-s{height:62px;}
+.list-2 li .ott .img .sleft{position:relative;height:62px;float:left;}
+.list-2 li .ott .img .sleft img{width:62px;height:62px;border-radius:62px;display:block;}
+.list-2 li .ott .img .sleft span{width:62px;height:20px;line-height:20px;border-radius:3px;text-align:center;font-size:12px;position:absolute;bottom:-4px;left:0;display:block;}
+.list-2 li .ott .img .sleft .s1{color:#844c12;background-image: linear-gradient(to right, #fcebd2, #e6bd8a);}
+.list-2 li .ott .img .sleft .s2{color:#fff;background-image: linear-gradient(to right, #f7913e, #ff713b);}
+.list-2 li .ott .img .smidd{float:left;margin-left:16px;}
+.list-2 li .ott .img .smidd h3{font-size:16px;color:#191c27;font-weight:normal;margin-top:-1px;width:134px;height:22px;line-height:22px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.list-2 li .ott .img .smidd span{font-size:14px;color:#5a6073;}
+.list-2 li .ott .img .img-hide-s .gz{float:right;width:80px;height:40px;line-height:40px;text-align:center;background:#1875f0;color:#fff;font-size:14px;margin-top:11px;cursor:pointer;border-radius:5px;}
+.list-2 li .ott .img .img-hide-s .gz.on{background:#f5f7fd;color:#5a6073;}
+.list-2 li .ott .img .img-hide-s a{display:block;color:#fff;}
+.list-2 li .ott .img .img-hide-z{font-size:14px;color:#5a6073;margin:20px 0 16px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;height:22px;line-height:22px;}
+.list-2 li .ott .img .img-hide-z a:hover{color:#1875f0;}
+.list-2 li .ott .img .img-hide-x{}
+.list-2 li .ott .img .img-hide-x dt{width:33.333%;float:left;text-align:center;}
+.list-2 li .ott .img .img-hide-x dt h4{font-size:24px;color:#191c27;font-family:"akrobat";}
+.list-2 li .ott .img .img-hide-x dt span{color:#9ea5bb;display:block;}
+.list-2 li .ott .img:hover .img-hide{display:block;}
+
+.list-2 li .ott .detail-tel{float:right;position:relative;background:url(../images/detail_tel1.png) no-repeat;width:22px;height:22px;cursor:pointer;background-size:contain;}
+.list-2 li .ott .detail-tel:hover{background:url(../images/detail_tel2.png) no-repeat;background-size:contain;}
+.list-2 li .ott .detail-tel span{height:28px;line-height:28px;color:#fff;background:#fab000;font-family:Arial;font-size:15px;padding:0 12px;;z-index:10;
+	border-radius:3px;position:absolute;top:26px;left:0;display:none;white-space:nowrap;}
+.list-2 li .ott .detail-tel:hover span{display:block;}
+.list-2 li .ott .detail-wx{float:right;position:relative;z-index:999;margin-left:10px;background:url(../images/detail_wxx1.png) no-repeat;width:22px;height:22px;
+	cursor:pointer;background-size:contain;}
+.list-2 li .ott .detail-wx img{border:5px solid #fff;position:absolute;top:26px;left:0;display:none;z-index:999;box-shadow:0 0 5px #bbb;border-radius:3px;}
+.list-2 li .ott .detail-wx:hover img{display:block;opacity:1 !important;}
+.list-2 li .ott .detail-wx:hover{background:url(../images/detail_wxx2.png) no-repeat;background-size:contain;}
+.list-2 li .ott .detail-wz{float:right;position:relative;margin-left:10px;background:url(../images/detail_wz1.png) no-repeat;width:22px;height:22px;cursor:pointer;background-size:contain;}
+.list-2 li .ott .detail-wz a{display:block;width:100%;height:100%;}
+.list-2 li .ott .detail-wz:hover{background:url(../images/detail_wz2.png) no-repeat;background-size:contain;}
+.list-2 li:hover{box-shadow:0 0 10px #ddd;}
+.list-2 li:hover .libox{margin-top:-8px;}
+
+.list-1 li{float:left;width:332px;height:208px;margin:0 24px 24px 0;transition:all 0.4s;background:#fff;box-sizing:border-box;padding:18px 18px 0;border-radius:5px;}
+.list-1 li:nth-child(4n){margin-right:0;}
+.list-1 li:hover{box-shadow:0 0 10px #ddd;}
+.list-1 li .s{height:56px;}
+.list-1 li .s .sz{float:left;height:56px;}
+.list-1 li .s .sz img{width:56px;height:56px;float:left;border-radius:56px;}
+.list-1 li .s .sz .rig{float:left;margin:5px 0 0 12px;}
+.list-1 li .s .sz .rig h3{font-size:16px;color:#191c27;}
+.list-1 li .s .sz .rig p{font-size:14px;color:#5a6073;margin-top:1px;}
+.list-1 li .s .sz:hover h3{color:#1875f0;}
+.list-1 li .s .sz:hover p{color:#1875f0;}
+.list-1 li .s .gz{float:right;width:64px;height:32px;line-height:32px;text-align:center;color:#fff;background:#1875f0;margin:12px 6px 0 0;
+	border-radius:3px;font-size:14px;cursor:pointer;transition:all 0.5s;}
+.list-1 li .s .gz:hover{opacity:0.8;}
+.list-1 li .s .gz a{display:block;color:#fff;}
+.list-1 li .s .on{background:#f3f3f4;color:#a6a9b4 !important;}
+.list-1 li .s .on:hover{color:#555 !important;}
+.list-1 li .s .lt{width:32px;height:32px;border-radius:3px;float:right;background:#f3f3f4 url(../images/lt.png) center no-repeat;margin-top:12px;cursor:pointer;background-size:17px;}
+.list-1 li .s .lt:hover{background:#1875f0 url(../images/lt_on.png) center no-repeat;background-size:17px;}
+.list-1 li .z{font-size:14px;color:#9ea5bb;margin:14px 0 8px;text-align:justify;height: 42px;}
+.list-1 li .x{text-align:center;}
+.list-1 li .x dt{width:33.33%;float:left}
+.list-1 li .x dt h3{font-size:24px;color:#191c27;font-family: "akrobat";}
+.list-1 li .x dt p{color:#9ea5bb;}
+
+.loadmore{padding:10px 0 0;}
+.loadmore p{width:1400px;height:50px;line-height:50px;text-align:center;margin:0 auto;font-size:17px;cursor:pointer;background:#fff;color:#888;transition:all 0.5s;border-radius:5px;}
+.loadmore p:hover{background:#ebedef;color:#444;}
